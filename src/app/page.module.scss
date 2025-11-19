@@ -1,0 +1,42 @@
+@use "./assets/styles/settings" as *;
+
+body {
+
+    .main {
+        background: url("/images/bg-2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        // font-family: ;
+
+        .slide1 {
+            width: 100%;
+            min-height: 700px;
+            display: flex;
+            justify-content: center;
+            // align-items: flex-start;
+            position: relative;
+            top: 15px;
+
+            h1 {
+                color: $light-blue;
+                font-size: 50px;
+                margin-top: 30px;
+            }
+
+            // img {
+            //     width: 200px;
+            //     border: solid 3px $light-blue;
+            //     border-radius: 30px;
+            //     object-fit: cover;
+            //     transition: transform 0.4s ease;
+
+            //     &:hover {
+            //         transform: translateY(-10px) scale(1.05);
+            //         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            //     }
+            // }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+@use "../assets/styles/settings" as *;
+
+body {
+    background-color: $light;
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .filter-search {
+            display: flex;
+            justify-content: end;
+            margin: 0 150px;
+
+            // form {
+            //     display: flex;
+            //     align-items: center;
+
+            //     .search {
+            //         border: none;
+            //         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            //         background-color: transparent;
+            //         border-radius: 5px;
+            //         cursor: pointer;
+            //         width: 200px;
+            //         // height: 23.5px;
+            //         padding: 5px 10px;
+            //         font-size: 14px;
+            //         margin-left: 10px;
+            //     }
+
+            //     .search-btn {
+            //         background-color: $light-blue;
+            //         color: $light;
+            //         border: none;
+            //         border-radius: 5px;
+            //         cursor: pointer;
+            //         width: 100px;
+            //         // height: 23.5px;
+            //         padding: 5px 10px;
+            //         font-size: 14px;
+            //         margin-left: 10px;
+            //     }
+            // }
+
+            .filter {
+                .filter-select {
+                    display: flex;
+                    align-items: center;
+
+                    .ant-select-selector {
+                        border: none;
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+                        background-color: transparent;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        width: 200px;
+                        height: 25px;
+                        padding: 0px 10px;
+                        font-size: 14px;
+                        margin-left: 10px;
+                        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                    }
+
+                    .ant-select-selrction-item {
+                        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                    }
+
+                    .ant-select-arrow {
+                    }
+
+                    &.ant-select-focused .ant-select-selector {
+                        transition: 0s;
+                        outline: 2px solid $light-blue !important;
+                        box-shadow: none !important;
+                    }
+
+                    // &.ant-select-open .ant-select-selector {
+                    //     outline: none !important;
+                    // }
+                }
+            }
+        }
+
+        .services {
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px 150px;
+
+            .service {
+                display: flex;
+                gap: 10px;
+                position: relative;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+                border-radius: 25px;
+                padding: 15px;
+
+                .img {
+                    img {
+                        border: solid 3px $light-blue;
+                        border-radius: 20px;
+                    }
+                }
+
+                .card-info {
+                    h1 {
+                        margin-top: 0px;
+                    }
+
+                    .btns {
+                        position: absolute;
+                        right: 15px;
+                        bottom: 15px;
+                        display: flex;
+                        gap: 10px;
+
+                        button {
+                            cursor: pointer;
+                            background-color: $primary;
+                            color: $light;
+                            border-radius: 10px;
+                            border: none;
+                            padding: 7px 13px;
+                            transition: all 0.2s ease-in-out;
+
+                            &:hover {
+                                background-color: $light-blue;
+                            }
+                        }
+                    }
+
+                    .liked {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

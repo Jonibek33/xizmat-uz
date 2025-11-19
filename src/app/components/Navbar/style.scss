@@ -1,0 +1,38 @@
+@use "../../assets/styles/settings" as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    h3 {
+        color: $primary;
+        
+    }
+
+    a {
+        font-weight: bold;
+
+    }
+
+    .links {
+        display: flex;
+        gap: 20px;
+        
+        a {
+            text-decoration: none;
+            color: $light-blue;
+        }
+    }
+
+    .actions {
+        display: flex;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: $primary;
+        }
+    }
+}
